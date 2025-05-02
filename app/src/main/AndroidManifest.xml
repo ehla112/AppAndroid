@@ -13,6 +13,18 @@
         android:theme="@style/Theme.AppProject"
         tools:targetApi="31">
         <activity
+            android:name=".ListPetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddCitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CitasMascotasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CitasActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddMascotaActivity"
             android:exported="false" />
         <activity

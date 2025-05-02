@@ -53,7 +53,7 @@ public class dataPetsActivity extends AppCompatActivity {
             return insets;
         });
         begin();
-        listData(findViewById(R.id.main));
+
         this.lvDataPets.setOnItemClickListener(this::setOnItemClick);
         btnAddMascota.setOnClickListener(this::addMascota);
 
@@ -183,6 +183,7 @@ public class dataPetsActivity extends AppCompatActivity {
         this.idMascota = getIntent().getIntExtra("idMascota", 0);
         this.lvDataPets = findViewById(R.id.lvDataPets);
         this.btnAddMascota = findViewById(R.id.btnAddMascota);
+        listData(findViewById(R.id.main));
 
 
 

@@ -8,93 +8,94 @@
     tools:context=".UserActivity">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloUsuario"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:padding="24dp">
+            android:text="@string/titulo_info_usuario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
 
-            <TextView
-                android:id="@+id/tvTituloUsuario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/titulo_info_usuario"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="24dp" />
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Usuario"
+            android:inputType="textPersonName"
+            android:enabled="false" />
 
-            <EditText
-                android:id="@+id/etUsuario"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="Usuario"
-                android:inputType="textPersonName"
-                android:enabled="false" />
+        <EditText
+            android:id="@+id/etNombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_nombre"
+            android:enabled="false"
+            android:layout_marginBottom="12dp" />
 
-            <EditText
-                android:id="@+id/etNombreUsuario"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="@string/hint_nombre"
-                android:enabled="false"
-                android:layout_marginBottom="12dp" />
-
-            <EditText
-                android:id="@+id/etContrasena"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:enabled="false"
-                android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/etContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:enabled="false"
+            android:layout_marginTop="8dp" />
 
 
-            <EditText
-                android:id="@+id/etCorreo"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="@string/hint_correo"
-                android:enabled="false"
-                android:layout_marginBottom="12dp" />
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_correo"
+            android:enabled="false"
+            android:layout_marginBottom="12dp" />
 
-            <EditText
-                android:id="@+id/etTelefono"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginBottom="14dp"
-                android:enabled="false"
-                android:hint="@string/hint_telefono" />
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="14dp"
+            android:enabled="false"
+            android:hint="@string/hint_telefono" />
 
-            <EditText
-                android:id="@+id/etDireccion"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="0dp"
-                android:enabled="false"
-                android:hint="Dirección"
-                android:inputType="textPostalAddress" />
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="0dp"
+            android:enabled="false"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress" />
 
-            <Button
-                android:id="@+id/btnActualizarUsuario"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="@string/btn_actualizar"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="20dp" />
+        <Button
+            android:id="@+id/btnActualizarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/btn_actualizar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/bottoncolor"/>
 
-            <Button
-                android:id="@+id/btnEliminarUsuario"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="@string/btn_eliminar_usuario"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="24dp" />
+        <Button
+            android:id="@+id/btnEliminarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/btn_eliminar_usuario"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/bottoncolor2"
+            android:layout_marginBottom="24dp" />
 
-        </LinearLayout>
+    </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+</androidx.constraintlayout.widget.ConstraintLayout>

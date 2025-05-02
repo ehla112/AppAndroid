@@ -56,5 +56,26 @@
     <string name="btnDeleteMascota">Eliminar Mascota</string>
     <string name="btnAddMascota">Agregar Mascota</string>
 
+    <!-- Hoja - citas -->
+    <string name="tvCitas">¡No olvides tus citas!</string>
+    <string name="tvPet"> </string>
+    <string name="tvAddCita">Agregar Cita</string>
+    <string name="fecha">Fecha: YYY-MM-DD </string>
+    <string name="lugar">Lugar </string>
+    <string name="Descripcion">Descripción</string>
+    <string name="hora">Hora: HH:MM</string>
+    <string name="btnAgendar">Agendar</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnEliminar">Eliminar</string>
+    <string name="btnProximas">Próximas Citas</string>
+    <string name="btnSelectFecha">Seleccionar Fecha y hora</string>
+    <string name="tvUpdateCita">Actualizar Cita</string>
+    <string name="tvCitasMascotas">Citas de la Mascota</string>
+    <string name="tvDescrip">Selecciona una mascota para verificar sus citas</string>
+    <string name="btnBuscarRecientes">Buscar Recientes</string>
+    <string name="btnBuscarVacuna">Buscar Todas</string>
+    <string name="etDiasRecientes">Dias Recientes</string>
+    <string name="tvListVmascota">Elija la mascota para infor vacunas</string>
+
 
 </resources>

@@ -19,6 +19,7 @@ public class ActivityHome extends AppCompatActivity {
     private Button btnVacunas;
     private Button btnCerrarSesion;
     private int idDueno;
+    private int idMascota;
 
     private int idUsuario;
     private Button btnInfoUser;
@@ -36,6 +37,9 @@ public class ActivityHome extends AppCompatActivity {
         start();
         btnInfoMascota.setOnClickListener(this::startInfoMascota);
         btnInfoHumano.setOnClickListener(this::startInfoUser);
+        btnCitasMedicas.setOnClickListener(this::startInfoCitasMedicas);
+        btnVacunas.setOnClickListener(this::startVacunas);
+
     }
 
     private void startInfoMascota(View view) {
@@ -53,6 +57,18 @@ public class ActivityHome extends AppCompatActivity {
         intent.putExtra("idDueno", idDueno);
         startActivity(intent);
         Toast.makeText(this, "idDueno enviado: " + idDueno, Toast.LENGTH_SHORT).show();
+    }
+    private void startInfoCitasMedicas(View view) {
+        Intent intent = new Intent(this, CitasActivity.class);
+        intent.putExtra("idDueno", idDueno);
+        startActivity(intent);
+
+    }
+    private void startVacunas (View view) {
+        Intent intent = new Intent(this, ListPetsActivity.class);
+        intent.putExtra("idDueno", idDueno);
+        startActivity(intent);
+        Toast.makeText(this, "idDueno enviado a vacunas: " + idDueno, Toast.LENGTH_SHORT).show();
     }
 
 
